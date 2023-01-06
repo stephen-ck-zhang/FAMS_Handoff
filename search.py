@@ -7,3 +7,6 @@ import cv2
 
 # Yolo v3 model
 
+def findPalm():
+    # empty function
+    return True
