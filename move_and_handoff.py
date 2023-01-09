@@ -113,15 +113,15 @@ def handoff():
     print("Confidence of hand detection", hand[2])
 
     # Moves arm according to the angles individually
-    Arm.Arm_serial_servo_write(2, link1, 500)
+    Arm.Arm_serial_servo_write6(2, link1, 500)
     time.sleep(1)
-    Arm.Arm_serial_servo_write(3, link2, 500)
+    Arm.Arm_serial_servo_write6(3, link2, 500)
     time.sleep(1)
-    Arm.Arm_serial_servo_write(4, link3, 500)
+    Arm.Arm_serial_servo_write6(4, link3, 500)
     time.sleep(1)
 
     # Lets go of tool
-    Arm.Arm_serial_servo_write(6, 130, 500)
+    Arm.Arm_serial_servo_write6(6, 130, 500)
     time.sleep(1)
 
     # Resets arm to original position after dropoff
@@ -166,15 +166,15 @@ def main():
     print("Confidence of scalpel detection", scalpel[2])
 
     # Moves arm according to the angles individually
-    Arm.Arm_serial_servo_write(2, link1, 500)
+    Arm.Arm_serial_servo_write6(2, link1, 500)
     time.sleep(1)
-    Arm.Arm_serial_servo_write(3, link2, 500)
+    Arm.Arm_serial_servo_write6(3, link2, 500)
     time.sleep(1)
-    Arm.Arm_serial_servo_write(4, link3, 500)
+    Arm.Arm_serial_servo_write6(4, link3, 500)
     time.sleep(1)
 
     # Closes the gripper
-    Arm.Arm_serial_servo_write(6, 10, 500)
+    Arm.Arm_serial_servo_write6(6, 10, 500)
     time.sleep(1)
 
     # Resets arm to original position after pickup
