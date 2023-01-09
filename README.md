@@ -16,12 +16,12 @@ A voice-controlled robotic arm is implemented with the speech recognition and co
 2. Install the dependencies
 3. Run the code
 
-*Run the `./yoloDetection.ipynb` first to set up all the dependencies and the environment. This file also helps you to test the referencing on sample image.*
+*Run the `./yoloDetection.ipynb` first to set up all the dependencies and the environment. This file also helps you to test the referencing on sample image. Make sure you put the `./example.jpeg` into the cloned repository for referencing.* 
 
 
 **Usage**
 ----
-The main file is located at `yolo5/move_and_handoff.py`. For the usage, just run the file with the following command in the target directory:
+The main file is located at `./move_and_handoff.py`. For the usage, put the files `./move_and_handoff.py` and `./search.py` into the cloned repository and just run the file with the following command in the directory:
 
 ```
 python3 move_and_handoff.py
