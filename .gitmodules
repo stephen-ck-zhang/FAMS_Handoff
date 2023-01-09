@@ -1,4 +1,0 @@
-[submodule "yoloV5"]
-	path = yoloV5
-	url = https://github.com/ultralytics/yolov5
-	ignore = dirty
